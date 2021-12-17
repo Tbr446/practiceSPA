@@ -35,6 +35,8 @@ function addEventListeners(st) {
     );
 }
 
+
+
 router.hooks({
   before: (done, params) => {
     const page =
