@@ -1,16 +1,13 @@
 const mongoose = require("mongoose");
 
-const pizzaSchema = new mongoose.Schema({
-  customer: String,
-  crust: String,
-  cheese: String,
-  sauce: String,
-  toppings: [String]
+const emailSchema = new mongoose.Schema({
+  name: String,
+  emailAddress: String
 });
 
-const Pizza = mongoose.model("Pizza", pizzaSchema);
+const Pizza = mongoose.model("Email", emailSchema);
 
 module.exports = {
-  schema: pizzaSchema,
+  schema: emailSchema,
   model: Pizza
 };
